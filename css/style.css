@@ -1,172 +1,65 @@
-body, html {
-  height: 100%;
-}
-
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "fira-sans-2", Verdana, sans-serif;
-}
-
-#q-graph {
-  display: block; /* fixes layout wonkiness in FF1.5 */
-  position: relative; 
-  width: 600px; 
-  height: 300px;
-  margin: 1.1em 0 0; 
-  padding: 0;
-  background: transparent;
-  font-size: 11px;
-  
-}
-
-#q-graph caption {
-  caption-side: top; 
-  width: 600px;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-  top: -40px;
-  position: relative; 
-  z-index: 10;
-  font-weight: bold;
-}
-
-#q-graph tr, #q-graph th, #q-graph td { 
-  position: absolute;
-  bottom: 0; 
-  width: 150px; 
-  z-index: 2;
-  margin: 0; 
-  padding: 0;
-  text-align: center;
-}
-
-#q-graph td {
-  transition: all .3s ease;
-  background-color: desaturate(#85144b, 100);
-  opacity: .9;
-  color: white;
-}
-  
-/* #q-graph thead tr {
-  left: 100%; 
-  top: 50%; 
-  bottom: auto;
-  margin: -2.5em 0 0 5em;}
-  
-#q-graph thead th {
-  width: 7.5em; 
-  height: auto; 
-  padding: 0.5em 1em;
-}
-
-#q-graph thead th.sent {
-  top: 0; 
-  left: 0; 
-  line-height: 2;
-}
-#q-graph thead th.paid {
-  top: 2.75em; 
-  line-height: 2;
-  left: 0; 
-} */
-
-#q-graph tbody tr {
-  height: 296px;
-  padding-top: 2px;
-  border-right: 1px dotted #C4C4C4; 
-  color: #AAA;
-  /* transform: rotate(90deg); */
-}
-
-#q-graph #apples {
-  	left: 0;
-}
-#q-graph #bananas {
-	left: 150px;
-}
-#q-graph #oranges {
-	left: 300px;
-}
-#q-graph #blueberries {
-	left: 450px; border-right: none;
-}
-
-/* Tekst onder de bars */
-#q-graph tbody th {
-	bottom: -1.75em; vertical-align: top;
-	font-weight: normal; color: #333;
-}
-
-
-/* Tekst in de bars */
-#q-graph .bar {
-  width: 100px; 
-  border: 1px solid; 
-  border-bottom: none; 
-  color: black;
-}
-
-#q-graph .bar p {
-  margin: 5px 0 0; 
-  padding: 0;
-  opacity: 1;
-}
-
-
-/* De breedte in per #q-graph #id (apples...) is 150.
-In #q-graph .bar is de breedte van de bar aangegeven (100)
-Aan beide zijkanten moetn dus 25 overblijven om de bar in het midden van een graph te houden
-Vandaar is de left: in onderstaande q-graph classes 25px */
-
-#q-graph .apples {
-  left: 25px; 
-  background-color: rgb(118, 118, 255);
-  border-color: transparent;
-	
-}
-
-#q-graph .bananas {
-	left: 25px; 
-	background-color: rgb(255, 137, 255);
-	border-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #f5f5df;
   }
 
-#q-graph .oranges {
-  left: 25px; 
-  background-color: rgb(255, 203, 108);
-  border-color: transparent;
+.barchart caption {
+    font:bold 150%/120% arial, helvetica, sans-serif;
 }
 
-#q-graph .blueberries {
-	left: 25px; 
-	background-color: rgb(255, 255, 132);
-	border-color: transparent;
-  }
-
-/* #ticks {
-  position: relative; 
-  top: -300px; 
-  left: 2px;
-  width: 596px; 
-  height: 300px; 
-  z-index: 1;
-  margin-bottom: -300px;
-  font-size: 10px;
-  font-family: "fira-sans-2", Verdana, sans-serif;
+#bartext{
+    font:bold 150%/120% arial, helvetica, sans-serif;
 }
 
-#ticks .tick {
-  position: relative; 
-  border-bottom: 1px dotted #C4C4C4; 
-  width: 600px;
+.apples-style{
+    background-color: #b6cfd2;
+    width: 1000px;
+    height: 30px;
+    font:bold 150%/120% arial, helvetica, sans-serif;
 }
 
-#ticks .tick p {
-  position: absolute; 
-  left: -5em; 
-  top: -0.8em; 
-  margin: 0 0 0 0.5em;
-} */
+.bananas-style{
+    background-color: #b78796;
+    width: 600px;
+    height: 30px;
+    font:bold 150%/120% arial, helvetica, sans-serif;
+    /* border: 1px solid black; */
+}
+
+.oranges-style{
+    background-color: #edb2a0;
+    width: 700px;
+    height: 30px;
+    font:bold 150%/120% arial, helvetica, sans-serif;
+}
+
+.blueberries-style{
+    background-color: #f4e3b5;
+    width: 200px;
+    height: 30px;
+    font:bold 150%/120% arial, helvetica, sans-serif;
+}
+
+.apples-style:hover{
+    background: white;
+    border: 10px solid black;
+}
+
+.bananas-style:hover{
+    background: white;
+    border: 10px solid black;
+}
+
+.oranges-style:hover{
+    background: white;
+    border: 10px solid black;
+}
+
+.blueberries-style:hover{
+    background: white;
+    border: 10px solid black;
+}
