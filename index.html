@@ -4,55 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div>
-        <table id="q-graph">
-            <caption>"My First Bar Chart"</caption>
-            <tbody>
-                <tr class="qtr" id="apples">
-                    <th scope="row">Appels</th>
-                    <td class="apples bar" style="height: 100px;">
-                        <p>Apples</p>
-                    </td>
-                </tr>
-                
-                <tr class="qtr" id="bananas">
-                    <th scope="row">Bananas</th>
-                    <td class="bananas bar" style="height: 60px;">
-                        <p>Bananas</p>
-                    </td>   
-                    </th>
-                </tr>
-
-                <tr class="qtr" id="bananas">
-                    <th scope="row">Bananas</th>
-                        <td class="bananas bar" style="height: 60px;">
-                            <p>Bananas</p>
-                        </td>
-                    </th>
-                </tr>
-
-                <tr class="qtr" id="oranges">
-                    <th scope="row">Oranges</th>
-                        <td class="oranges bar" style="height: 70px;">
-                            <p>Oranges</p>
-                        </td>
-                    </th>
-                </tr>
-
-                <tr class="qtr" id="blueberries">
-                    <th scope="row">Blueberries</th>
-                        <td class="blueberries bar" style="height: 20px;">
-                            <p>Blueberries</p>
-                        </td>
-                    </th>
-                </tr>   
-
-            </tbody>
-          </table>
-    </div>
-</body>
+    <table class="barchart">
+        <caption>"Mijn eerste bar chart!"</caption>
+      <tr>
+        <td id="bartext">Apples</td>
+        <td>
+          <div class="apples-style" id="speciaal">
+            100%
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="bartext">Bananas</td>
+        <td>
+          <div class="bananas-style">
+            60%
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="bartext">Oranges</td>
+        <td>
+          <div class="oranges-style">
+            70%
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td id="bartext">Blueberries</td>
+        <td>
+          <div class="blueberries-style">
+            20%
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+  </html>
 </html>
